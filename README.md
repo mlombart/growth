@@ -14,4 +14,3 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
 ### Benchmarks
 #### Constant kernel
 
-![test](./kconst/bin_pair.png)
