@@ -13,8 +13,12 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
 
 ### Benchmarks
 #### Constant kernel
+Python scripts are located in ``` kconst/code```.
 
 ##### Positivity, mass conservation and accuracy
+Data are located in ``` kconst/data/simu```.
+
+The corresponding script is ``` plot_kconst_simu.py ```
 
 <p align="middle">
    <img src="./kconst/plots/kconst_linlog.png" width="80%">
