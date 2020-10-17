@@ -14,6 +14,7 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
 ### Benchmarks
 #### Constant kernel
 
+##### Positivity, mass conservation and accuracy
 
 <p align="middle">
    <img src="./kconst/plots/kconst_linlog.png" width="80%">
@@ -24,17 +25,24 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
    <img src="./kconst/plots/kconst_err_M1.png" width="49%">
 </div>
 
+###### Stability in time
 
 <p align="middle">
    <img src="./kconst/plots/kconst_errL1cont.png" width="49%" />
    <img src="./kconst/plots/kconst_errL1dis.png" width="49%" />
 </p>
 
+###### Convergence analysis
 <p align="middle">
    <img src="./kconst/plots/kconst_errL1_convergence.png" width="49%"/>
    <img src="./kconst/plots/kconst_errL1_xmeanlog_convergence.png" width="49%"/>
 </p>
 
-<img src="./kconst/plots/kconst_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
 
+###### Computational efficiency
+<p align="left">
+   <img src="./kconst/plots/kconst_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
+</p>
 
+<p align="right">
+   <"Improvement by a factor ~ 4.">

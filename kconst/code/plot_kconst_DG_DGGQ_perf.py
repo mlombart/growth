@@ -111,8 +111,7 @@ plt.title(r'$\tau=%.2f$' %(timek2[-1]))
 plt.legend(loc='lower left',ncol=1)
 plt.tight_layout()
 
-print('Improvement in computational time by a factor of %d.' %(time_perf_DGGQ/time_perf_DG))
-
+print('Improvement in computational time by a factor of %2.f.' %(time_perf_DGGQ/time_perf_DG))
 # plt.savefig(path2+'/plots/kconst_tend_loglog_xmeanlog_DGvsDGGQ.pdf',**savefig_options)
 # plt.savefig(path2+'/plots/kconst_tend_loglog_xmeanlog_DGvsDGGQ.png',**savefig_options)
 
