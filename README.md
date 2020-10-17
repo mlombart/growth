@@ -87,8 +87,12 @@ Improvement by a factor ~ 2000 in computational time.
    <img src="./kmul/plots/kmul_linlog.png" width="80%">
 </p>
 
+<p align="middle">
+   <img src="./kmul/plots/kmul_tend_loglog_xmeanlog.png" width="50%">
+</p>
+
 <div class="row">
-   <img src="./kmul/plots/kmul_tend_loglog_xmeanlog.png" width="49%">
+   <img src="./kmul/plots/kmul_M1.png" width="49%">
    <img src="./kmul/plots/kmul_err_M1.png" width="49%">
 </div>
 

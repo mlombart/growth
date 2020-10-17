@@ -73,7 +73,7 @@ plt.legend(loc='lower left',ncol=2)
 plt.tight_layout()
 
 # plt.savefig(path2+'/plots/kmul_err_M1.pdf',**savefig_options)
-# plt.savefig(path2+'/plots/kmul_err_M1.png',**savefig_options)
+plt.savefig(path2+'/plots/kmul_err_M1.png',**savefig_options)
 
 # plt.close(1)
 
@@ -91,7 +91,7 @@ plt.legend(loc='lower left',ncol=2)
 plt.tight_layout()
 
 # plt.savefig(path2+'/plots/kmul_M1.pdf',**savefig_options)
-# plt.savefig(path2+'/plots/kmul_M1.png',**savefig_options)
+plt.savefig(path2+'/plots/kmul_M1.png',**savefig_options)
 
 # plt.close(2)
 
