@@ -67,8 +67,8 @@ Improvement by a factor ~ 4 in computational time.
 
 ###### Convergence analysis
 <p align="middle">
-   <img src="./kadd/plots/kadd_errL1_convergence.png" width="49%"/>
-   <img src="./kadd/plots/kadd_errL1_xmeanlog_convergence.png" width="49%"/>
+   <img src="./kadd/plots/kadd_errL1cont_convergence.png" width="49%"/>
+   <img src="./kadd/plots/kadd_errL1dis_convergence.png" width="49%"/>
 </p>
 
 
