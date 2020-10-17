@@ -20,11 +20,11 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
 
 <div class="row">
   <div class="column">
-    <img src="./kconst/plots/kconst_linlog.png" width="49%">
+    <img src="./kconst/plots/kconst_linlog.png" width="0%">
   </div>
   <div class="column">
-    <img src="./kconst/plots/kconst_tend_loglog_xmeanlog.png" width="49%">
-    <img src="./kconst/plots/kconst_err_M1.png" width="49%">
+    <img src="./kconst/plots/kconst_tend_loglog_xmeanlog.png" width="40%">
+    <img src="./kconst/plots/kconst_err_M1.png" width="40%">
   </div>
 </div>
 
