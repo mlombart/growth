@@ -9,7 +9,6 @@ from matplotlib import pyplot as plt
 
 #change the current directory to the directory
 #where the running script file (.py) exists
-
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 path1 = os.getcwd()
 # print(path1)
@@ -70,7 +69,7 @@ massgridk0 = np.loadtxt(path_data_k0+'grainmassgrid.txt')
 massbinsk0 = np.loadtxt(path_data_k0+'grainmassbins.txt')
 massbinsk0meanlog = [np.sqrt(massgridk0[i]*massgridk0[i+1]) for i in range(nbins)]
 gij_k0_data = np.genfromtxt(path_data_k0+'gijLeg.txt')
-ghmean_k0 = np.loadtxt(path_data_k0+'ghmean.txt')
+gjmean_k0 = np.loadtxt(path_data_k0+'gjmean.txt')
 theta_k0 = np.loadtxt(path_data_k0+'theta.txt')
 timek0 = np.loadtxt(path_data_k0+'time.txt')
 gij_k0 = np.reshape(gij_k0_data,(len(timek0),nbins,k0+1))
@@ -85,7 +84,7 @@ massgridk1 = np.loadtxt(path_data_k1+'grainmassgrid.txt')
 massbinsk1 = np.loadtxt(path_data_k1+'grainmassbins.txt')
 massbinsk1meanlog = [np.sqrt(massgridk1[i]*massgridk1[i+1]) for i in range(nbins)]
 gij_k1_data = np.genfromtxt(path_data_k1+'gijLeg.txt')
-ghmean_k1 = np.loadtxt(path_data_k1+'ghmean.txt')
+gjmean_k1 = np.loadtxt(path_data_k1+'gjmean.txt')
 theta_k1 = np.loadtxt(path_data_k1+'theta.txt')
 timek1 = np.loadtxt(path_data_k1+'time.txt')
 gij_k1 = np.reshape(gij_k1_data,(len(timek1),nbins,k1+1))
@@ -99,7 +98,7 @@ massgridk2 = np.loadtxt(path_data_k2+'grainmassgrid.txt')
 massbinsk2 = np.loadtxt(path_data_k2+'grainmassbins.txt')
 massbinsk2meanlog = [np.sqrt(massgridk2[i]*massgridk2[i+1]) for i in range(nbins)]
 gij_k2_data = np.genfromtxt(path_data_k2+'gijLeg.txt')
-ghmean_k2 = np.loadtxt(path_data_k2+'ghmean.txt')
+gjmean_k2 = np.loadtxt(path_data_k2+'gjmean.txt')
 theta_k2 = np.loadtxt(path_data_k2+'theta.txt')
 timek2 = np.loadtxt(path_data_k2+'time.txt')
 gij_k2 = np.reshape(gij_k2_data,(len(timek2),nbins,k2+1))
@@ -113,7 +112,7 @@ massgridk3 = np.loadtxt(path_data_k3+'grainmassgrid.txt')
 massbinsk3 = np.loadtxt(path_data_k3+'grainmassbins.txt')
 massbinsk3meanlog = [np.sqrt(massgridk3[i]*massgridk3[i+1]) for i in range(nbins)]
 gij_k3_data = np.genfromtxt(path_data_k3+'gijLeg.txt')
-ghmean_k3 = np.loadtxt(path_data_k3+'ghmean.txt')
+gjmean_k3 = np.loadtxt(path_data_k3+'gjmean.txt')
 theta_k3 = np.loadtxt(path_data_k3+'theta.txt')
 timek3 = np.loadtxt(path_data_k3+'time.txt')
 gij_k3 = np.reshape(gij_k3_data,(len(timek3),nbins,k3+1))
@@ -162,14 +161,14 @@ axes[3,1].plot(x,solKconstDL(x,timek3[-1]),'--',c='C0',label='Analytic')
 
 
 for j in range(nbins):
-   axes[0,0].plot(I(massgridk0,j),ghtilde(massgridk0,massbinsk0,gij_k0[0,:,:],ghmean_k0[0,:],theta_k0[0,:],k0,j,I(massgridk0,j)),c='black',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
-   axes[0,1].plot(I(massgridk0,j),ghtilde(massgridk0,massbinsk0,gij_k0[-1,:,:],ghmean_k0[-1,:],theta_k0[-1,:],k0,j,I(massgridk0,j)),c='black',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
-   axes[1,0].plot(I(massgridk1,j),ghtilde(massgridk0,massbinsk0,gij_k1[0,:,:],ghmean_k1[0,:],theta_k1[0,:],k1,j,I(massgridk0,j)),c='C3',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
-   axes[1,1].plot(I(massgridk1,j),ghtilde(massgridk0,massbinsk0,gij_k1[-1,:,:],ghmean_k1[-1,:],theta_k1[-1,:],k1,j,I(massgridk1,j)),c='C3',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
-   axes[2,0].plot(I(massgridk2,j),ghtilde(massgridk2,massbinsk2,gij_k2[0,:,:],ghmean_k2[0,:],theta_k2[0,:],k2,j,I(massgridk2,j)),c='C1',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
-   axes[2,1].plot(I(massgridk2,j),ghtilde(massgridk2,massbinsk2,gij_k2[-1,:,:],ghmean_k2[-1,:],theta_k2[-1,:],k2,j,I(massgridk2,j)),c='C1',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
-   axes[3,0].plot(I(massgridk3,j),ghtilde(massgridk3,massbinsk3,gij_k3[0,:,:],ghmean_k3[0,:],theta_k3[0,:],k3,j,I(massgridk3,j)),c='C2',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
-   axes[3,1].plot(I(massgridk3,j),ghtilde(massgridk3,massbinsk3,gij_k3[-1,:,:],ghmean_k3[-1,:],theta_k3[-1,:],k3,j,I(massgridk3,j)),c='C2',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
+   axes[0,0].plot(I(massgridk0,j),ghtilde(massgridk0,massbinsk0,gij_k0[0,:,:],gjmean_k0[0,:],theta_k0[0,:],k0,j,I(massgridk0,j)),c='black',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
+   axes[0,1].plot(I(massgridk0,j),ghtilde(massgridk0,massbinsk0,gij_k0[-1,:,:],gjmean_k0[-1,:],theta_k0[-1,:],k0,j,I(massgridk0,j)),c='black',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
+   axes[1,0].plot(I(massgridk1,j),ghtilde(massgridk0,massbinsk0,gij_k1[0,:,:],gjmean_k1[0,:],theta_k1[0,:],k1,j,I(massgridk0,j)),c='C3',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
+   axes[1,1].plot(I(massgridk1,j),ghtilde(massgridk0,massbinsk0,gij_k1[-1,:,:],gjmean_k1[-1,:],theta_k1[-1,:],k1,j,I(massgridk1,j)),c='C3',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
+   axes[2,0].plot(I(massgridk2,j),ghtilde(massgridk2,massbinsk2,gij_k2[0,:,:],gjmean_k2[0,:],theta_k2[0,:],k2,j,I(massgridk2,j)),c='C1',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
+   axes[2,1].plot(I(massgridk2,j),ghtilde(massgridk2,massbinsk2,gij_k2[-1,:,:],gjmean_k2[-1,:],theta_k2[-1,:],k2,j,I(massgridk2,j)),c='C1',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
+   axes[3,0].plot(I(massgridk3,j),ghtilde(massgridk3,massbinsk3,gij_k3[0,:,:],gjmean_k3[0,:],theta_k3[0,:],k3,j,I(massgridk3,j)),c='C2',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
+   axes[3,1].plot(I(massgridk3,j),ghtilde(massgridk3,massbinsk3,gij_k3[-1,:,:],gjmean_k3[-1,:],theta_k3[-1,:],k3,j,I(massgridk3,j)),c='C2',label=(r'$g_j(x,\tau)$' if j==0 else '_'))
    
 
 axes[0,0].plot([], [], ' ', label=r'$k=0$')
@@ -197,7 +196,7 @@ for j in range(4):
 axes[3,0].set_xlabel(r'mass $x$')
 axes[3,1].set_xlabel(r'mass $x$')
 
-plt.savefig(path2+'/plots/kconst_linlog.png',**savefig_options)
+# plt.savefig(path2+'/plots/kconst_linlog.png',**savefig_options)
 
 plt.show()
 
