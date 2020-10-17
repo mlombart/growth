@@ -1,0 +1,5 @@
+DDGQ
+nbins=21
+k= 2
+Q= 3
+time perf (s) =    0.8087647000E+002
