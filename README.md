@@ -16,7 +16,7 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
 
 
 <p align="middle">
-   <img src="./kconst/plots/kconst_linlog.png" width="50%">
+   <img src="./kconst/plots/kconst_linlog.png" width="80%">
 </p>
 
 <div class="row">
