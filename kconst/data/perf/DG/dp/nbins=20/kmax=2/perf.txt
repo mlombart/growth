@@ -1,0 +1,5 @@
+DG
+nbins=20
+k= 2
+time total perf (s) =    0.6772781000E+001
+time ODE perf (s) =    0.4270984000E+001

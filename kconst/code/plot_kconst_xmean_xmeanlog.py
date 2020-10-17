@@ -74,7 +74,7 @@ massbinsk0meanlog = [np.sqrt(massgridk0[i]*massgridk0[i+1]) for i in range(nbins
 gjt_xmean_k0 = np.loadtxt(path_data_k0+'gjt_xmean.txt')
 gjt_xmeanlog_k0 = np.loadtxt(path_data_k0+'gjt_xmeanlog.txt')
 timek0 = np.loadtxt(path_data_k0+'time.txt')
-
+################################
 
 #data k1
 ################################
@@ -86,6 +86,7 @@ massbinsk1meanlog = [np.sqrt(massgridk1[i]*massgridk1[i+1]) for i in range(nbins
 gjt_xmean_k1 = np.loadtxt(path_data_k1+'gjt_xmean.txt')
 gjt_xmeanlog_k1 = np.loadtxt(path_data_k1+'gjt_xmeanlog.txt')
 timek1 = np.loadtxt(path_data_k1+'time.txt')
+################################
 
 #data k2
 ################################
