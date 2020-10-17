@@ -78,4 +78,38 @@ Improvement by a factor ~ 2000 in computational time.
 <img src="./kadd/plots/kadd_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
 
 
+
+#### Multiplicative kernel
+
+##### Positivity, mass conservation and accuracy
+
+<p align="middle">
+   <img src="./kmul/plots/kmul_linlog.png" width="80%">
+</p>
+
+<div class="row">
+   <img src="./kmul/plots/kmul_tend_loglog_xmeanlog.png" width="49%">
+   <img src="./kmul/plots/kmul_err_M1.png" width="49%">
+</div>
+
+###### Stability in time
+
+<p align="middle">
+   <img src="./kmul/plots/kmul_errL1cont.png" width="49%" />
+   <img src="./kmul/plots/kmul_errL1dis.png" width="49%" />
+</p>
+
+###### Convergence analysis
+<p align="middle">
+   <img src="./kmul/plots/kmul_errL1cont_convergence.png" width="49%"/>
+   <img src="./kmul/plots/kmul_errL1dis_convergence.png" width="49%"/>
+</p>
+
+
+###### Computational efficiency
+Improvement by a factor ~ 2000 in computational time. 
+
+<img src="./kmul/plots/kmul_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
+
+
    
