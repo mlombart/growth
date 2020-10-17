@@ -14,18 +14,14 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
 ### Benchmarks
 #### Constant kernel
 
-![kconst_linlog](./kconst/plots/kconst_linlog.png) ![kconst_tend_loglog_xmeanlog](./kconst/plots/kconst_tend_loglog_xmeanlog.png)
 
-
+<p align="middle">
+   <img src="./kconst/plots/kconst_linlog.png" width="50%">
+</p>
 
 <div class="row">
-  <div class="column">
-    <img src="./kconst/plots/kconst_linlog.png" width="40%">
-  </div>
-  <div class="column">
-    <img src="./kconst/plots/kconst_tend_loglog_xmeanlog.png" width="40%">
-    <img src="./kconst/plots/kconst_err_M1.png" width="40%">
-  </div>
+   <img src="./kconst/plots/kconst_tend_loglog_xmeanlog.png" width="49%">
+   <img src="./kconst/plots/kconst_err_M1.png" width="49%">
 </div>
 
 
