@@ -40,9 +40,7 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
 
 
 ###### Computational efficiency
-<div class="row">
-   <img src="./kconst/plots/kconst_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
-   <p>Improvement by a factor ~ 4.</p>
-</div>
+<img src="./kconst/plots/kconst_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400" aligne="left">
+Improvement by a factor ~ 4 in computational time.
 
    
