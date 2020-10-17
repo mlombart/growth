@@ -20,9 +20,10 @@ plt.rcParams["font.size"]= 20
 plt.rcParams['lines.linewidth'] = 3
 savefig_options=dict(bbox_inches='tight')
 
+
 nbins=20
 
-#load data
+#loda data
 #data k0
 ################################
 k0=0
@@ -44,7 +45,7 @@ errL1_dis_k1 = np.loadtxt(path_data_k1+'errL1_dis.txt')
 #data k2
 ################################
 k2=2
-path_data_k2 = path2+'/data/simu/dp/nbins='+str(nbins)+'/kmax='+str(k2)+'/'
+path_data_k2 = path2+'/data/simu/qp/nbins='+str(nbins)+'/kmax='+str(k2)+'/'
 timek2 = np.loadtxt(path_data_k2+'time.txt')
 errL1_cont_k2 = np.loadtxt(path_data_k2+'errL1_cont.txt')
 errL1_dis_k2 = np.loadtxt(path_data_k2+'errL1_dis.txt')
@@ -72,9 +73,8 @@ plt.ylabel(r'numerical error $e_{\mathrm{c},N}$')
 plt.legend(loc='lower left',ncol=2)
 plt.tight_layout()
 
-# plt.savefig(path2+'/plots/kconst_errL1cont.pdf',**savefig_options)
-# plt.savefig(path2+'/plots/kconst_errL1cont.png',**savefig_options)
-
+# plt.savefig(path2+'/plots/kadd_errL1cont.pdf',**savefig_options)
+# plt.savefig(path2+'/plots/kadd_errL1cont.png',**savefig_options)
 # plt.close(1)
 
 plt.figure(2)
@@ -89,9 +89,10 @@ plt.ylabel(r'numerical error $e_{\mathrm{d},N}$')
 plt.legend(loc='lower left',ncol=2)
 plt.tight_layout()
 
-# plt.savefig(path2+'/plots/paper_kconst_errL1dis.pdf',**savefig_options)
-# plt.savefig(path2+'/plots/kconst_errL1dis.png',**savefig_options)
+# plt.savefig(path2+'/plots/kadd_errL1dis.pdf',**savefig_options)
+# plt.savefig(path2+'/plots/kadd_errL1dis.png',**savefig_options)
 
-# plt.close(21)
+# plt.close(2)
 
 plt.show()
+

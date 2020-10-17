@@ -35,9 +35,6 @@ path_data = path2+'/data/EOC/dp/'
 path_data_k3 = path2+'/data/EOC/qp/'
 
 massgridk0 = np.loadtxt(path_data+'nbins='+str(5)+'/kmax='+str(k0)+'/grainmassgrid.txt')
-massgridk1 = np.loadtxt(path_data+'nbins='+str(5)+'/kmax='+str(k1)+'/grainmassgrid.txt')
-massgridk2 = np.loadtxt(path_data+'nbins='+str(5)+'/kmax='+str(k2)+'/grainmassgrid.txt')
-massgridk3 = np.loadtxt(path_data_k3+'nbins='+str(5)+'/kmax='+str(k3)+'/grainmassgrid.txt')
 
 #define array number of bins per decade
 ndecades = np.log10(massgridk0[-1])-np.log10(massgridk0[0])
