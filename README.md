@@ -19,6 +19,10 @@ Python 3 is used to produce figures for constant, additive and multiplicative co
 <img src="./kconst/plots/kconst_errL1cont.png" width="400">
 <img src="./kconst/plots/kconst_errL1dis.png" width="400">
 
+![kconst_errL1cont](./kconst/plots/kconst_errL1cont.png) | ![kconst_errL1cont](./kconst/plots/kconst_errL1dis.png)
+
+
+
 <img src="./kconst/plots/kconst_errL1_convergence.png" width="400">
 <img src="./kconst/plots/kconst_errL1_xmeanlog_convergence.png.png" width="400">
 
