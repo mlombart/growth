@@ -111,7 +111,7 @@ Improvement by a factor ~ 2000 in computational time.
 
 
 ###### Computational efficiency
-Improvement by a factor ~ 2000 in computational time. 
+Improvement by a factor ~ 8 in computational time. 
 
 <img src="./kmul/plots/kmul_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
 
