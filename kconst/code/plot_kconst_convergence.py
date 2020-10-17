@@ -138,8 +138,8 @@ plt.xlim(xmax=17)
 plt.legend(loc='lower left')
 plt.tight_layout()
 
-# plt.savefig(path2+'/plots/errL1_convergence.pdf',**savefig_options)
-# plt.savefig(path2+'/plots/errL1_convergence.png',**savefig_options)
+# plt.savefig(path2+'/plots/kconst_errL1_convergence.pdf',**savefig_options)
+# plt.savefig(path2+'/plots/kconst_errL1_convergence.png',**savefig_options)
 
 # plt.close(1)
 
@@ -179,8 +179,8 @@ plt.xlim(xmax=17)
 plt.legend(loc='lower left')
 plt.tight_layout()
 
-# plt.savefig(path2+'/plots/errL1_xmeanlog_convergence.pdf',**savefig_options)
-# plt.savefig(path2+'/plots/errL1_xmeanlog_convergence.png',**savefig_options)
+# plt.savefig(path2+'/plots/kconst_errL1_xmeanlog_convergence.pdf',**savefig_options)
+# plt.savefig(path2+'/plots/kconst_errL1_xmeanlog_convergence.png',**savefig_options)
 
 # plt.close(3)
 
