@@ -12,8 +12,8 @@ from matplotlib import pyplot as plt
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 path1 = os.getcwd()
-print(path1)
-print(os.path.realpath('..'))
+# print(path1)
+# print(os.path.realpath('..'))
 path2 = os.path.realpath('..')
 
 
@@ -196,6 +196,8 @@ for j in range(4):
    axes[j,0].set_ylabel(r'mass density $g$')
 axes[3,0].set_xlabel(r'mass $x$')
 axes[3,1].set_xlabel(r'mass $x$')
+
+plt.savefig(path2+'/plots/kconst_linlog.png',**savefig_options)
 
 plt.show()
 
