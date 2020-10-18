@@ -24,12 +24,15 @@ The corresponding script is ``` plot_kconst_simu.py ```
    <img src="./kconst/plots/kconst_linlog.png" width="80%">
 </p>
 
+The corresponding scripts are ``` plot_kconst_xmean_xmeanlog.py ``` and ``` plot_kconst_error_moments.py ```.
 <div class="row">
    <img src="./kconst/plots/kconst_tend_loglog_xmeanlog.png" width="49%">
    <img src="./kconst/plots/kconst_err_M1.png" width="49%">
 </div>
 
 ###### Stability in time
+Data are located in ``` kconst/data/simu```.
+The corresponding scripts is ``` plot_kconst_errors_simu.py ```.
 
 <p align="middle">
    <img src="./kconst/plots/kconst_errL1cont.png" width="49%" />
@@ -37,6 +40,8 @@ The corresponding script is ``` plot_kconst_simu.py ```
 </p>
 
 ###### Convergence analysis
+Data are located in ``` kconst/data/EOC```.
+The corresponding scripts is ``` plot_kconst_convergence.py ```. 
 <p align="middle">
    <img src="./kconst/plots/kconst_errL1_convergence.png" width="49%"/>
    <img src="./kconst/plots/kconst_errL1_xmeanlog_convergence.png" width="49%"/>
@@ -44,6 +49,8 @@ The corresponding script is ``` plot_kconst_simu.py ```
 
 
 ###### Computational efficiency
+Data are located in ``` kconst/data/perf``` with the files ```perf.txt```. The time for DG is "time ODE perf" and for DGGQ is "time perf". 
+The corresponding script is ```plot_kconst_DG_DGGQ_perf.py```.
 Improvement by a factor ~ 4 in computational time. 
 
 <img src="./kconst/plots/kconst_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
