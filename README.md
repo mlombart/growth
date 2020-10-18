@@ -18,7 +18,7 @@ Python scripts are located in ``` kconst/code```.
 ##### Positivity, mass conservation and accuracy
 Data are located in ``` kconst/data/simu```.
 
-The corresponding script is ``` plot_kconst_simu.py ```
+The corresponding script is ``` plot_kconst_simu.py ```.
 
 <p align="middle">
    <img src="./kconst/plots/kconst_linlog.png" width="80%">
@@ -32,7 +32,7 @@ The corresponding scripts are ``` plot_kconst_xmean_xmeanlog.py ``` and ``` plot
 
 ###### Stability in time
 Data are located in ``` kconst/data/simu```.
-The corresponding scripts is ``` plot_kconst_errors_simu.py ```.
+The corresponding script is ``` plot_kconst_errors_simu.py ```.
 
 <p align="middle">
    <img src="./kconst/plots/kconst_errL1cont.png" width="49%" />
@@ -41,7 +41,7 @@ The corresponding scripts is ``` plot_kconst_errors_simu.py ```.
 
 ###### Convergence analysis
 Data are located in ``` kconst/data/EOC```.
-The corresponding scripts is ``` plot_kconst_convergence.py ```. 
+The corresponding script is ``` plot_kconst_convergence.py ```. 
 <p align="middle">
    <img src="./kconst/plots/kconst_errL1_convergence.png" width="49%"/>
    <img src="./kconst/plots/kconst_errL1_xmeanlog_convergence.png" width="49%"/>
@@ -51,6 +51,7 @@ The corresponding scripts is ``` plot_kconst_convergence.py ```.
 ###### Computational efficiency
 Data are located in ``` kconst/data/perf``` with the files ```perf.txt```. The time for DG is "time ODE perf" and for DGGQ is "time perf". 
 The corresponding script is ```plot_kconst_DG_DGGQ_perf.py```.
+
 Improvement by a factor ~ 4 in computational time. 
 
 <img src="./kconst/plots/kconst_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
@@ -59,17 +60,23 @@ Improvement by a factor ~ 4 in computational time.
 #### Additive kernel
 
 ##### Positivity, mass conservation and accuracy
+Data are located in ``` kadd/data/simu```.
+
+The corresponding script is ``` plot_kadd_simu.py ```.
 
 <p align="middle">
    <img src="./kadd/plots/kadd_linlog.png" width="80%">
 </p>
 
+The corresponding scripts are ``` plot_kadd_xmean_xmeanlog.py ``` and ``` plot_kadd_error_moments.py ```.
 <div class="row">
    <img src="./kadd/plots/kadd_tend_loglog_xmeanlog.png" width="49%">
    <img src="./kadd/plots/kadd_err_M1.png" width="49%">
 </div>
 
 ###### Stability in time
+Data are located in ``` kadd/data/simu```.
+The corresponding script is ``` plot_kadd_errors_simu.py ```.
 
 <p align="middle">
    <img src="./kadd/plots/kadd_errL1cont.png" width="49%" />
@@ -77,6 +84,9 @@ Improvement by a factor ~ 4 in computational time.
 </p>
 
 ###### Convergence analysis
+Data are located in ``` kadd/data/EOC```.
+The corresponding script is ``` plot_kadd_convergence.py ```.
+
 <p align="middle">
    <img src="./kadd/plots/kadd_errL1cont_convergence.png" width="49%"/>
    <img src="./kadd/plots/kadd_errL1dis_convergence.png" width="49%"/>
@@ -84,6 +94,9 @@ Improvement by a factor ~ 4 in computational time.
 
 
 ###### Computational efficiency
+Data are located in ``` kadd/data/perf``` with the files ```perf.txt```. The time for DG is "time ODE perf" and for DGGQ is "time perf". 
+The corresponding script is ```plot_kadd_DG_DGGQ_perf.py```.
+
 Improvement by a factor ~ 2000 in computational time. 
 
 <img src="./kadd/plots/kadd_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
@@ -94,20 +107,31 @@ Improvement by a factor ~ 2000 in computational time.
 
 ##### Positivity, mass conservation and accuracy
 
+Data are located in ``` kmul/data/simu```.
+
+The corresponding script is ``` plot_kmul_simu.py ```.
+
+
 <p align="middle">
    <img src="./kmul/plots/kmul_linlog.png" width="80%">
 </p>
 
+
+
+The corresponding script is ``` plot_kmul_xmean_xmeanlog.py ```.
 <p align="middle">
    <img src="./kmul/plots/kmul_tend_loglog_xmeanlog.png" width="50%">
 </p>
 
+The corresponding script is  ``` plot_kmul_error_moments.py ```.
 <div class="row">
    <img src="./kmul/plots/kmul_M1.png" width="49%">
    <img src="./kmul/plots/kmul_err_M1.png" width="49%">
 </div>
 
 ###### Stability in time
+Data are located in ``` kmul/data/simu```.
+The corresponding script is ``` plot_kmul_errors_simu.py ```.
 
 <p align="middle">
    <img src="./kmul/plots/kmul_errL1cont.png" width="49%" />
@@ -115,6 +139,9 @@ Improvement by a factor ~ 2000 in computational time.
 </p>
 
 ###### Convergence analysis
+Data are located in ``` kmul/data/EOC```.
+The corresponding script is ``` plot_kmul_convergence.py ```.
+
 <p align="middle">
    <img src="./kmul/plots/kmul_errL1cont_convergence.png" width="49%"/>
    <img src="./kmul/plots/kmul_errL1dis_convergence.png" width="49%"/>
@@ -122,6 +149,9 @@ Improvement by a factor ~ 2000 in computational time.
 
 
 ###### Computational efficiency
+Data are located in ``` kmul/data/perf``` with the files ```perf.txt```. The time for DG is "time ODE perf" and for DGGQ is "time perf". 
+The corresponding script is ```plot_kmul_DG_DGGQ_perf.py```.
+
 Improvement by a factor ~ 8 in computational time. 
 
 <img src="./kmul/plots/kmul_tend_loglog_xmeanlog_DGvsDGGQ.png" width="400">
